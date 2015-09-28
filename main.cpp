@@ -4,8 +4,10 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    Qtomato w;
-    w.show();
+    a.setQuitOnLastWindowClosed(false);
+
+    Qtomato q;
+    q.show();
 
     return a.exec();
 }

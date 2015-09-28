@@ -12,3 +12,6 @@ SOURCES += main.cpp\
 HEADERS  += qtomato.h
 
 FORMS    += qtomato.ui
+
+RESOURCES += \
+    res.qrc

@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="icon48">img/tomato48.png</file>
+        <file alias="icon64">img/tomato64.png</file>
+        <file alias="icon128">img/tomato128.png</file>
+        <file alias="icon24">img/tomato24.png</file>
+        <file alias="break_long">img/break_long.png</file>
+        <file alias="break_short">img/break_short.png</file>
+        <file alias="quit">img/quit.png</file>
+    </qresource>
+</RCC>

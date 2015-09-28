@@ -3,8 +3,9 @@
 
 #include <QDialog>
 #include <QTimer>
-#include <QDebug>
-#include <QTime>
+#include <QMenu>
+#include <QDateTime>
+#include <QSystemTrayIcon>
 
 namespace Ui {
 class Qtomato;
@@ -27,12 +28,19 @@ private slots:
     void on_buttonReset_clicked();
 
     void processTimer();
+    void handleTrayActivationReason(QSystemTrayIcon::ActivationReason reason);
 
 private:
     Ui::Qtomato *ui;
     QTimer pomodoroTimer;
     QTimer threadTimer;
     qint64 pomodoroTimerElpsed;
+
+    QSystemTrayIcon trayIcon;
+    QMenu trayIconMenu;
+    QIcon trayIconMain;
+
+    QIcon quitIcon;
 };
 
 #endif // QTOMATO_H
